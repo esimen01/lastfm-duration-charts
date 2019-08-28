@@ -10,7 +10,7 @@ import Register from './components/Register/Register';
 import './App.css';
 
 const initialState = {
-  route: 'home',
+  route: 'signin',
   isSignedIn: false
 };
 
