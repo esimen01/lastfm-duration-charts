@@ -1,0 +1,76 @@
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+tbody {
+  vertical-align: middle;
+  display: block;
+  box-sizing: border-box;
+}
+
+tr {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #EEE;
+}
+
+td {
+  display: block;
+  vertical-align: inherit;
+  text-align: left;
+}
+
+.track, .artist {
+  width: 35%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.track {
+  margin-bottom: 20px;
+  left: 20%;
+  font-weight: 700;
+}
+
+.artist {
+  position: absolute;
+  margin-top: 11px;
+  left: 20%;
+}
+
+.rank {
+  text-align: left;
+  width: 10%;
+}
+
+.image {
+  width: 10%;
+}
+
+.scrobbles {
+  left: 55%;
+  position: absolute;
+  width: 45%;
+}
+
+.amount {
+  background-color: rgba(185, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  float: left;
+}
+
+p {
+  margin: 0;
+  padding-left: 0.5rem;
+}
