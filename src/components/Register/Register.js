@@ -4,15 +4,19 @@ class Register extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      signInEmail: '',
-      signInPassword: ''
+      regEmail: '',
+      regPassword: '',
+      regUsername: ''
     }
   }
   onEmailChange = (event) => {
-    this.setState({signInEmail: event.target.value})
+    this.setState({regEmail: event.target.value})
   }
   onPasswordChange = (event) => {
-    this.setState({signInPassword: event.target.value})
+    this.setState({regPassword: event.target.value})
+  }
+  onUsernameChange = (event) => {
+    this.setState({regUsername: event.target.value})
   }
   onSubmitRegister = () => {
     this.props.onRouteChange('home');
@@ -32,11 +36,11 @@ class Register extends React.Component {
             <input type="password" className="db w-100 pa2 mt2 br2 b--black-20 ba f6" id="inputPassword3" placeholder="Password" onChange={this.onPasswordChange} />
           </div>
           <div className="mv3">
-            <label htmlFor="inputPassword3" className="fw7 f6">Last.fm account</label>
-            <input type="text" className="db w-100 pa2 mt2 br2 b--black-20 ba f6" id="inputPassword3" placeholder="Username" />
+            <label htmlFor="inputUsername3" className="fw7 f6">Last.fm account</label>
+            <input type="text" className="db w-100 pa2 mt2 br2 b--black-20 ba f6" id="inputUsername3" placeholder="Username" />
           </div>
           <div className="form-group">
-              <button onClick={this.onSubmitRegister} type="submit" className="pointer br2 ba b--black-20 bg-white pa2 mv3 bg-animate hover-bg-light-gray f6">Sign in</button>
+              <button onClick={this.onSubmitRegister} type="submit" className="pointer br2 ba b--black-20 bg-white pa2 mv3 bg-animate hover-bg-light-gray f6">Register</button>
           </div>
         </div>
       </div>

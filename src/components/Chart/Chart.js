@@ -4,9 +4,9 @@ import './Chart.css';
 const Chart = () => {
   return (
     <div className="ma3 pa4 bg-white-70">
-      <div>
-        <h2 className="ma3">Top Tracks</h2>
-        <table className="center bg-white-70 pa0 w-80">
+      <h2 className="ma3">Top Tracks</h2>
+      <div className="pa4 bg-white-70 w-80 center">
+        <table className="center pa0 w-100 db">
           <thead className="hide">
             <tr>
               <th className="rank">Rank</th>
