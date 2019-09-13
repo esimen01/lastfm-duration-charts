@@ -13,8 +13,9 @@ class Loading extends React.Component {
     setTimeout(() => {
       this.setState({currentPage: i + 1});
       fetch(`http://localhost:3000/data/ej_sim/1month/${i + 1}`, {
-
-      })
+        method: 'post',
+        headers: {'Content-Type': 'application/json'}
+      });
     }, i * 1000);
   }
   loop = async (n) => {
@@ -36,7 +37,7 @@ class Loading extends React.Component {
     .then(data => {
       console.log(data);
       this.setState({totalPages: data.pages});
-      this.loop(this.state.totalPages)
+      this.loop(this.state.totalPages);
     })
   }
   render() {
